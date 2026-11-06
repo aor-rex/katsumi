@@ -4,23 +4,20 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import dev.katsumi.ui.PlayerActivity
 
-private data class Tab(val label: String, val icon: ImageVector)
+private data class Tab(val label: String, val glyph: String)
 
 private val TABS = listOf(
-    Tab("Library", Icons.Filled.VideoLibrary),
-    Tab("Continue", Icons.Filled.PlayCircle),
-    Tab("Review", Icons.Filled.Rule),
-    Tab("Settings", Icons.Filled.Settings),
+    Tab("Library", "▦"),
+    Tab("Continue", "◷"),
+    Tab("Review", "⚠"),
+    Tab("Settings", "⚙"),
 )
 
 class MainActivity : ComponentActivity() {
@@ -36,7 +33,7 @@ class MainActivity : ComponentActivity() {
                                 NavigationBarItem(
                                     selected = tab == i,
                                     onClick = { tab = i },
-                                    icon = { Icon(t.icon, t.label) },
+                                    icon = { Text(t.glyph) },
                                     label = { Text(t.label) },
                                 )
                             }
