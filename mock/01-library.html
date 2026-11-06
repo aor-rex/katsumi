@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Roboto,system-ui,sans-serif}
+body{background:#0b0e14;color:#e3e3e6;width:400px;height:860px;overflow:hidden}
+.top{padding:20px 20px 8px;display:flex;align-items:center;gap:12px}
+.avatar{width:40px;height:40px;border-radius:20px;background:linear-gradient(135deg,#7c5cff,#00d4ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+.title{font-size:22px;font-weight:500}.sub{font-size:13px;color:#9aa0aa}
+.search{margin:12px 20px;background:#1c212b;border-radius:28px;padding:13px 20px;color:#9aa0aa;font-size:15px}
+.search b{font-size:20px;vertical-align:-2px}
+.tabs{display:flex;gap:8px;padding:4px 20px 12px}
+.tab{padding:8px 16px;border-radius:12px;font-size:14px;background:#1c212b;color:#c4c7c5}
+.tab.on{background:#d0bcff;color:#1a1025;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:4px 20px}
+.card{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4.2}
+.c1{background:linear-gradient(160deg,#2b1055,#7597de)}.c2{background:linear-gradient(160deg,#42275b,#734b6d)}
+.c3{background:linear-gradient(160deg,#0f2027,#2c5364)}.c4{background:linear-gradient(160deg,#6420aa,#ff3ea5)}
+.c5{background:linear-gradient(160deg,#232526,#414345)}.c6{background:linear-gradient(160deg,#1a2a6c,#fdbb2d)}
+.card .t{position:absolute;left:0;right:0;bottom:24px;font-size:12px;font-weight:600;padding:18px 8px 4px;background:linear-gradient(transparent,#000d)}
+.card .e{position:absolute;left:8px;bottom:8px;font-size:11px;color:#e8e8e8}
+.prog{position:absolute;left:6px;right:6px;bottom:0;height:4px;background:#00000088;border-radius:2px;overflow:hidden}
+.prog i{display:block;height:100%;background:#d0bcff}
+.nav{position:absolute;bottom:0;width:400px;background:#14181f;display:flex;justify-content:space-around;padding:12px 0 20px;font-size:12px;color:#9aa0aa}
+.nav b{color:#d0bcff}
+.npill{background:#49454f;border-radius:12px;padding:2px 10px;color:#d0bcff !important}
+.badge{position:relative}.badge:after{content:'3';position:absolute;top:-4px;right:8px;background:#ffb4ab;color:#410002;font-size:10px;font-weight:700;border-radius:8px;padding:1px 6px}
+.bar{width:120px;height:4px;border-radius:2px;background:#444;margin:8px auto 0}
+</style></head><body>
+<div class="top"><div class="avatar">R</div><div><div class="title">Library</div><div class="sub">12 shows · 3 need review</div></div></div>
+<div class="search"><b>⌕</b> &nbsp;Search your library</div>
+<div class="tabs"><div class="tab on">All</div><div class="tab">Watching</div><div class="tab">Completed</div></div>
+<div class="grid">
+<div class="card c1"><div class="t">Frieren</div><div class="e">EP 14/28</div><div class="prog"><i style="width:50%"></i></div></div>
+<div class="card c2"><div class="t">Fate/Zero</div><div class="e">EP 13/13 ✓</div><div class="prog"><i style="width:100%"></i></div></div>
+<div class="card c3"><div class="t">Apothecary Diaries</div><div class="e">EP 7/24</div><div class="prog"><i style="width:29%"></i></div></div>
+<div class="card c4"><div class="t">Solo Leveling</div><div class="e">EP 1/13</div><div class="prog"><i style="width:8%"></i></div></div>
+<div class="card c5"><div class="t">Vinland Saga</div><div class="e">EP 0/24</div><div class="prog"><i style="width:0%"></i></div></div>
+<div class="card c6"><div class="t">Kaiju No. 8</div><div class="e">EP 9/12</div><div class="prog"><i style="width:75%"></i></div></div>
+</div>
+<div class="nav"><span><span class="npill">▦</span><br>Library</span><span>◷<br>Continue</span><span class="badge">⚠<br>Review</span><span>⚙<br>Settings</span></div>
+</body></html>
