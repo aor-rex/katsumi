@@ -14,6 +14,7 @@ jobs:
       - name: generate sample video
         run: |
           sudo apt-get install -y -q ffmpeg
+          mkdir -p app/src/main/assets
           ffmpeg -y -f lavfi -i testsrc=duration=5:size=640x360:rate=30 \
             -pix_fmt yuv420p app/src/main/assets/sample.mp4
 
