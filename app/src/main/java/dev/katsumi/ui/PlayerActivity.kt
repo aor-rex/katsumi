@@ -39,7 +39,7 @@ class PlayerActivity : ComponentActivity() {
         if (!out.exists()) {
             assets.open("sample.mp4").use { input -> out.outputStream().use { input.copyTo(it) } }
         }
-        MPVLib.command(arrayOf("loadfile", out.absolutePath))
+        MPVLib.command("loadfile", out.absolutePath)
     }
 
     override fun onDestroy() {
